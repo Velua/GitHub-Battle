@@ -8,17 +8,25 @@ function puke(object){
 
 function ConfirmBattle(props){
 	return props.isLoading === true
-	? <p> Loading! </p>
+	? <center> <br /><br /><br /><br /><br /><h1>Loading! </h1></center>
 	: <div>
 
 
-	<h1> Show down </h1>
+	<center><h1> Show down! </h1>
 
 	<br /> <br />
-	<h2> Player One </h2><br />
-		<UserDetails user={props.playersInfo[0]} />
-	<h2> Player Two </h2>
-		<UserDetails user={props.playersInfo[1]} />
+	<div className="row">
+	<div className="col-md-6">
+		<UserDetails user={props.playersInfo[0]} header="Player 1" />
+		</div>
+		<div className="col-md-6">
+		<UserDetails user={props.playersInfo[1]} header="Player 2" />
+		</div>
+		</div>
+		<div className="row">
+</div>
+</center>
+{puke(props.playersInfo[0])}
 	</div>
 
 }
