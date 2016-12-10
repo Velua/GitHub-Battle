@@ -2,7 +2,6 @@
 React app which compares two users against eachother using the GitHub API
 
 #Install
-Run
 ```javascript
 npm install
 npm start
