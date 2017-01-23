@@ -26,7 +26,7 @@ function ConfirmBattle(props){
 		<div className="row">
 </div>
 </center>
-{puke(props.playersInfo[0])}
+
 	</div>
 
 }
